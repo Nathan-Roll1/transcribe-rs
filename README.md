@@ -319,7 +319,7 @@ cargo run --release --example parakeet --features onnx -- "$model_dir" audio.wav
 model_dir=$(python3 examples/download_orukeet.py --offline)
 ```
 
-The installer verifies a release manifest and every required file's SHA-256, retains the model and converter licenses, and reuses the Hugging Face cache. The genuine manifest download participates in normal Hugging Face download accounting; there are no extra counting requests or audio uploads. The ~672 MB weights use the NVIDIA Open Model License. Model-card accuracy results concern the NeMo runtime and do not establish this export's accuracy or speed here. The existing Parakeet example's arguments are optional, so its defaults remain unchanged.
+The installer verifies a release manifest and every required file's SHA-256, retains the model and converter licenses, and reuses the Hugging Face cache. The genuine manifest download participates in normal Hugging Face download accounting; there are no extra counting requests or audio uploads. The ~672 MB weights are licensed under [CC BY-SA 4.0](https://huggingface.co/oruk/orukeet/blob/eac739d754bb171287930e6e63386f5b88f8179e/onnx/combined-v0.1.0-int8/LICENSE-WEIGHTS), as recorded in the downloaded `LICENSE-WEIGHTS`; `NOTICE.md` preserves the NVIDIA/Parakeet attribution. Model-card accuracy results concern the NeMo runtime and do not establish this export's accuracy or speed here. The existing Parakeet example's arguments are optional, so its defaults remain unchanged.
 
 ## Models
 
